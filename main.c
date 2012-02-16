@@ -1,6 +1,6 @@
 #include  "msp430g2553.h"
 
-#define P_TIM_LED 	(0x40)
+#define P_TIM_LED 	(0x40) // Green LED
 #define P_ADC_LED 	(0x01)
 #define P_TX		(BIT2)
 
@@ -159,15 +159,12 @@ void main()
 	_EINT();
 	while (currentMeasurement < NUMBER_OF_ACQUISITIONS) {
 		LPM0; 						// Wait for the TIMER triggered wake-up
-		P1OUT |= P_ADC_LED;			// Enable ADC LED
 		if(currentTick == 0) { // currentTime incremented : start a new ADC
 			ADC10CTL0 |= ENC + ADC10SC;	// Sampling and conversion start
 			LPM0; // Wait for the end of the conversion
 		}
 		// Send UART data anyway : all the data is transmitted every TIME_BETWEEN_TICK
 		sendUARTData();
-		if(NUMBER_OF_ACQUISITIONS - currentMeasurement > 10)
-			P1OUT &= ~P_ADC_LED;	// Disable ADC LED if there is still some room left
 	  }
 }
 
@@ -194,6 +191,7 @@ __interrupt void ADC10_ISR(void)
 		currentTime = 0; // Reset time
 	}
 
+	P1OUT ^= P_ADC_LED;			// Change state of ADC LED
 	LPM0_EXIT; // Need to exit low poser mode to send data
 }
 
