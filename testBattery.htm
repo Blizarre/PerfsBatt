@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+</head>
+<body>
+
+<h1>Why ?</h1>
+
+Evaluate the effectiveness/cost ratio of several battery brand. 
+
+I have been doing photography and caving for several years now, and I have used a lots of rechargeable and non-rechargeable batteries on flash, LED lamp etc.
+
+I had a few questions :
+
+<ul>
+<li>I observed that the batteries that worked so well on my headlamp were almost useless on my flash, so I wanted to investigate why.</li>
+<li>I used only cheap batteries because of their very low cost. Would it be cost-effective to buy better ones ?</li>
+</ul>
+
+<h1>Methodology</h1>
+
+I knew for various web source that rechargeable and non-rechargeable batteries have a very different-looking discharge curve, and that the "capacity" could very greatly depending on the output. So I measured the intensity of the current on my headlamp at medium power (around 200mA), wich mean an equivalent resistance of 7.5 Ohm. I took the closest one I got at 5.6 Ohm :
+
+<table border="1" cellpadding="3">
+<tr><th>Voltage (V)</th><th>Current (mA)</tr>
+<tr><td>1.5</td><td>268 mA</td></tr>
+<tr><td>1.3</td><td>232 mA</td></tr>
+<tr><td>1.1</td><td>196 mA</td></tr>
+</table>
+
+The current values are above 200mA, but this is not a problem since my headlamp is fairly low power, and I plan to get (or make) a more powerful one.
+
+<p><b>TLRD; I measured the discharge graph of a battery on a 5.6 Ohm load to match my gear.</b></p>
+
+<h1>Results</h1>
+
+
+<image src="images/batteryBench.png" alt="Results of the benchmark"/>
+
+<image src="images/discharge11.png" alt="Discharge time to 1.1V"/>
+<image src="images/discharge13.png" alt="Discharge time to 1.3V"/>
+<image src="images/variability.png" alt="Evaluation of the variability of the discharge for the same brand"/>
+<image src="images/discharge11E.png" alt="Discharge time to 1.1V, taking into account the price"/>
+<image src="images/discharge13E.png" alt="Discharge time to 1.3V, taking into account the price"/>
+
+
+</body>
+
+</html>

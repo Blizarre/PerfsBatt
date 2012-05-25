@@ -166,6 +166,12 @@ void main()
 		// Send UART data anyway : all the data is transmitted every TIME_BETWEEN_TICK
 		sendUARTData();
 	  }
+	  
+	// Keep sending data after the buffer is full
+	while(1) {
+		LPM0;  // Wait for the TIMER triggered wake-up
+		sendUARTData();
+	}
 }
 
 
