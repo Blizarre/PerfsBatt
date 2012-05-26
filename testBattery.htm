@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 
 <head>
 
@@ -31,18 +31,62 @@ I knew for various web source that rechargeable and non-rechargeable batteries h
 
 The current values are above 200mA, but this is not a problem since my headlamp is fairly low power, and I plan to get (or make) a more powerful one.
 
-<p><b>TLRD; I measured the discharge graph of a battery on a 5.6 Ohm load to match my gear.</b></p>
+<p><b>TLRD; I measured the discharge graph of batteries on a 5.6 Ohm load to match my gear.</b></p>
 
 <h1>Results</h1>
 
+<h2>Test Material</h2>
 
+<p>I used this little project described <a href="index.html">Here</a> to get the discharge curves. I compared 6 different brands, and 2 Ni-Mh rechargeable batteries.</p>
+
+<table border="1" cellpadding="3">
+<tr><th>Brand name			</th> <th>Price	(&euro;)	</th><th>Type	</th></tr>
+<tr><td>Amazon Basics		</td><td>0.40		</td><td>Alcaline</td></tr>
+<tr><td>Carrefour Discount	</td><td>0.25		</td><td>Alcaline</td></tr>
+<tr><td>Discount One (old)	</td><td>0.30		</td><td>Alcaline</td></tr>
+<tr><td>Ikea Alkaline		</td><td>0.40		</td><td>Alcaline</td></tr>
+<tr><td>Energizer Ultra+	</td><td>1.18		</td><td>Alcaline</td></tr>
+<tr><td>VARTA High Energy	</td><td>1.02		</td><td>Alcaline</td></tr>
+<tr><td>Conrad				</td><td>3.70		</td><td>Ni-Mh 2500mAh</td></tr>
+</table>
+
+<h2>Variability</h2>
+
+<image src="images/variability.png" alt="Evaluation of the variability of the discharge for the same brand"/>
+
+<p>The first step is to ensure that the variability of measurements is not too high. If it was the case, the study 
+would have to be made several time for every brand, which would be impractical. The measurements are made on 5 different 
+Amazon essential batteries, from 2 different packages. The two packages were bought at the same time, so they a probably 
+from the same batch. The results shows a good consistency of the results.</p>
+
+<h2>Discharge curves</h2>
 <image src="images/batteryBench.png" alt="Results of the benchmark"/>
 
-<image src="images/discharge11.png" alt="Discharge time to 1.1V"/>
+<h2>Discharge time</h2>
+<image src="images/discharge11.png" alt="Discharge time to 1.1V"/><p/>
+
 <image src="images/discharge13.png" alt="Discharge time to 1.3V"/>
-<image src="images/variability.png" alt="Evaluation of the variability of the discharge for the same brand"/>
-<image src="images/discharge11E.png" alt="Discharge time to 1.1V, taking into account the price"/>
+
+<p>As usual, you get what you pay for. The brand batteries shows better performances than the discount One. However, 
+the difference is only in the range of a 5 to 20% improvement. 
+The Carrefour Discount as well as the ikea batteries are very good, on par with the brand ones. However, the other 
+discount hold a significatly lower charge.</p>
+
+<h2>Discharge time corrected</h2>
+
+<image src="images/discharge11E.png" alt="Discharge time to 1.1V, taking into account the price"/><p/>
 <image src="images/discharge13E.png" alt="Discharge time to 1.3V, taking into account the price"/>
+
+<p>You get what you pay for, right. But how much exactly ? well, not much. Every increase in performance 
+comes at a greater cost, and the batteries are no exception. The pricing difference is so large (>500%) that 
+the small increase in performance is annihilated when you look at your wallet.</p>
+
+<h2>Conclusion</h2>
+
+<p>Well, thoses results are not unexpected. If you <b>need</b> the best batteries available, for a critical project, 
+take the brand batteries. Well, if it is so important, you should even take li-ion non rechargeable batteries, which are 
+supposed to last a lot longer (and cost a lot more, that's why i didn't included them in the test). For everything else, 
+the cheaper ones are better.</p>
 
 
 </body>
