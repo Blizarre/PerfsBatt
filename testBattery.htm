@@ -1,26 +1,32 @@
-﻿<html>
+<html>
 
 <head>
-
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Batteries benchmark</title>
+	<meta http-equiv="revisit-after" name="Revisit-after" content="2 days"/>
+	<meta http-equiv="robots" name="Robots" content="all"/>
+	<meta name="robots" content="INDEX|FOLLOW"/>
+	<link rel="stylesheet" type="text/css" href="../website.css" />
 </head>
 <body>
 
-<h1>Why ?</h1>
+<h1>Why?</h1>
 
-Evaluate the effectiveness/cost ratio of several battery brand. 
+Evaluate the effectiveness/cost ratio of several battery brands.
+I have been doing photography and caving for several years now, and I have used a lot of rechargeable and non-rechargeable batteries on flash, LED lamp etc.
 
-I have been doing photography and caving for several years now, and I have used a lots of rechargeable and non-rechargeable batteries on flash, LED lamp etc.
-
-I had a few questions :
+I had a few questions:
 
 <ul>
 <li>I observed that the batteries that worked so well on my headlamp were almost useless on my flash, so I wanted to investigate why.</li>
-<li>I used only cheap batteries because of their very low cost. Would it be cost-effective to buy better ones ?</li>
+<li>I used only cheap batteries because of their very low cost. Would it be cost-effective to buy better ones?</li>
 </ul>
 
 <h1>Methodology</h1>
 
-I knew for various web source that rechargeable and non-rechargeable batteries have a very different-looking discharge curve, and that the "capacity" could very greatly depending on the output. So I measured the intensity of the current on my headlamp at medium power (around 200mA), wich mean an equivalent resistance of 7.5 Ohm. I took the closest one I got at 5.6 Ohm :
+<p>I knew from various sources that rechargeable and non-rechargeable batteries have a very different-looking discharge curve, 
+and that the "capacity" could vary greatly depending on the output. Therefore I measured the intensity of the current on my headlamp 
+at medium power (around 200mA), which is equivalent to a resistance of 7.5 Ohm. I took the closest one I got at 5.6 Ohm:</p>
 
 <table border="1" cellpadding="3">
 <tr><th>Voltage (V)</th><th>Current (mA)</tr>
@@ -41,12 +47,12 @@ The current values are above 200mA, but this is not a problem since my headlamp 
 
 <table border="1" cellpadding="3">
 <tr><th>Brand name			</th> <th>Price	(&euro;)	</th><th>Type	</th></tr>
-<tr><td>Amazon Basics		</td><td>0.40		</td><td>Alcaline</td></tr>
-<tr><td>Carrefour Discount	</td><td>0.25		</td><td>Alcaline</td></tr>
-<tr><td>Discount One (old)	</td><td>0.30		</td><td>Alcaline</td></tr>
-<tr><td>Ikea Alkaline		</td><td>0.40		</td><td>Alcaline</td></tr>
-<tr><td>Energizer Ultra+	</td><td>1.18		</td><td>Alcaline</td></tr>
-<tr><td>VARTA High Energy	</td><td>1.02		</td><td>Alcaline</td></tr>
+<tr><td>Amazon Basics		</td><td>0.40		</td><td>Alkaline</td></tr>
+<tr><td>Carrefour Discount	</td><td>0.25		</td><td>Alkaline</td></tr>
+<tr><td>Discount One (old)	</td><td>0.30		</td><td>Alkaline</td></tr>
+<tr><td>IKEA Alkaline		</td><td>0.40		</td><td>Alkaline</td></tr>
+<tr><td>Energizer Ultra+	</td><td>1.18		</td><td>Alkaline</td></tr>
+<tr><td>VARTA High Energy	</td><td>1.02		</td><td>Alkaline</td></tr>
 <tr><td>Conrad				</td><td>3.70		</td><td>Ni-Mh 2500mAh</td></tr>
 </table>
 
@@ -55,9 +61,9 @@ The current values are above 200mA, but this is not a problem since my headlamp 
 <image src="images/variability.png" alt="Evaluation of the variability of the discharge for the same brand"/>
 
 <p>The first step is to ensure that the variability of measurements is not too high. If it was the case, the study 
-would have to be made several time for every brand, which would be impractical. The measurements are made on 5 different 
+would have to be made several times for every brand, which would be impractical. The measurements are made on 5 different 
 Amazon essential batteries, from 2 different packages. The two packages were bought at the same time, so they a probably 
-from the same batch. The results shows a good consistency of the results.</p>
+from the same batch. The results are very similar for all of them.</p>
 
 <h2>Discharge curves</h2>
 <image src="images/batteryBench.png" alt="Results of the benchmark"/>
@@ -67,25 +73,25 @@ from the same batch. The results shows a good consistency of the results.</p>
 
 <image src="images/discharge13.png" alt="Discharge time to 1.3V"/>
 
-<p>As usual, you get what you pay for. The brand batteries shows better performances than the discount One. However, 
+<p>As usual, you get what you pay for. The branded batteries show better performances than the discounts. However, 
 the difference is only in the range of a 5 to 20% improvement. 
-The Carrefour Discount as well as the ikea batteries are very good, on par with the brand ones. However, the other 
-discount hold a significatly lower charge.</p>
+The Carrefour Discount as well as the IKEA batteries are very good, on par with the brand ones. However, the other 
+ones hold a significantly lower charge.</p>
 
 <h2>Discharge time corrected</h2>
 
-<image src="images/discharge11E.png" alt="Discharge time to 1.1V, taking into account the price"/><p/>
-<image src="images/discharge13E.png" alt="Discharge time to 1.3V, taking into account the price"/>
+<p><image src="images/discharge11E.png" alt="Discharge time to 1.1V, taking into account the price"/></p>
+<p><image src="images/discharge13E.png" alt="Discharge time to 1.3V, taking into account the price"/></p>
 
-<p>You get what you pay for, right. But how much exactly ? well, not much. Every increase in performance 
+<p>You get what you pay for, right? Well, not really. Every increase in performance 
 comes at a greater cost, and the batteries are no exception. The pricing difference is so large (>500%) that 
 the small increase in performance is annihilated when you look at your wallet.</p>
 
 <h2>Conclusion</h2>
 
-<p>Well, thoses results are not unexpected. If you <b>need</b> the best batteries available, for a critical project, 
+<p>Well, those results are not unexpected. If you <b>need</b> the best batteries available, for a critical project, 
 take the brand batteries. Well, if it is so important, you should even take li-ion non rechargeable batteries, which are 
-supposed to last a lot longer (and cost a lot more, that's why i didn't included them in the test). For everything else, 
+supposed to last a lot longer (and cost a lot more, that's why they aren't in this test). For everything else, 
 the cheaper ones are better.</p>
 
 
